@@ -1,0 +1,28 @@
+ion-content {
+    --background: url('/assets/images/ArrierePlan2.png') no-repeat / cover;
+  }
+  ion-button {
+    --background: transparent; /* Fond transparent */
+    --color: white; /* Texte en blanc */
+    --box-shadow: none; /* Supprime les ombres */
+    text-transform: none; /* Garde le texte tel qu'il est (pas de majuscules forcées) */
+    padding: 10px; /* Espacement intérieur du bouton */
+    
+    /* Bordure personnalisée */
+    border: 1px solid rgb(104, 100, 100); /* Applique une bordure blanche de 2px */
+    border-radius: 8px; /* Ajoute des coins arrondis pour un effet esthétique */
+  }
+  
+  ion-button img {
+    display: block;
+    margin: 0 auto 5px; /* Centrer les images et ajouter un espacement */
+  }
+  on-button ion-icon {
+    color: rgb(23, 22, 22); /* Icône en blanc */
+  }
+  
+  ion-button img {
+    display: block;
+    margin: 0 auto 5px; /* Centrer les images et ajouter un espacement */
+  }
+  

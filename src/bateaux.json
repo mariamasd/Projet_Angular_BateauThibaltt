@@ -1,0 +1,55 @@
+[
+    {
+      "id": "de-la-brise",
+      "name": "De la Brise",
+      "description": "Un magnifique catamaran offrant des vues splendides sur la mer.",
+      "capacity": 12,
+      "features": [
+        { "type": "Catamaran" },
+        { "length": "15 mètres" },
+        { "speed": "25 km/h" },
+        { "storageCapacity": "2000 kg" }
+      ],
+      "image": "assets/images/de-la-brise.jpg"
+    },
+    {
+      "id": "saphir",
+      "name": "Saphir",
+      "description": "Un voilier élégant parfait pour des escapades tranquilles en mer.",
+      "capacity": 8,
+      "features": [
+        { "type": "Voilier" },
+        { "length": "10 mètres" },
+        { "speed": "20 km/h" },
+        { "storageCapacity": "500 kg" }
+      ],
+      "image": "assets/images/saphir.jpg"
+    },
+    {
+      "id": "gast-micher",
+      "name": "Gast Micher",
+      "description": "Un bateau rapide pour les excursions de pêche.",
+      "capacity": 6,
+      "features": [
+        { "type": "Bateau de pêche" },
+        { "length": "8 mètres" },
+        { "speed": "35 km/h" },
+        { "storageCapacity": "1000 kg" }
+      ],
+      "image": "assets/images/gast-micher.jpg"
+    },
+    {
+      "id": "aquilon",
+      "name": "Aquilon",
+      "description": "Un yacht luxueux pour des croisières privées.",
+      "capacity": 20,
+      "features": [
+        { "type": "Yacht" },
+        { "length": "25 mètres" },
+        { "speed": "40 km/h" },
+        { "storageCapacity": "5000 kg" }
+      ],
+      "image": "assets/images/aquilon.jpg"
+    }
+  ]
+  
