@@ -1,0 +1,29 @@
+.header {
+    ion-toolbar {
+      display: flex; /* Active Flexbox */
+      align-items: center; /* Centre le contenu verticalement */
+      justify-content: space-between; /* Sépare le logo et le titre */
+      background-color: #165394; /* Couleur de fond */
+      color: white; /* Couleur du texte */
+      padding: 0 15px; /* Padding horizontal */
+    }
+  
+    .logo {
+      display: flex; /* Assure un alignement interne si nécessaire */
+      align-items: center; /* Centre le logo verticalement */
+    }
+  
+    .logo img {
+      height: 25px; /* Ajuste la taille de l'image */
+      width: auto; /* Conserve les proportions */
+      margin-right: 2px; /* Ajoute un espace entre le logo et le texte (si applicable) */
+    }
+  
+    .title {
+      font-size: 1rem; /* Taille du texte */
+      font-weight: bold;
+      text-align: center; /* Centre le texte horizontalement */
+      flex-grow: 1; /* Permet au texte de prendre l'espace disponible */
+    }
+  }
+  
