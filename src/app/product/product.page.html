@@ -5,16 +5,25 @@
     </ion-buttons>
     <ion-title>{{ getCategoryName() }}</ion-title> <!-- Nom de la catégorie dynamiquement -->
     <ion-buttons slot="end">
-      <ion-icon name="cart" size="large" class="header-icon"></ion-icon>
+      <ion-icon
+        name="cart"
+        size="large"
+        class="header-icon"
+      ></ion-icon>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content class="custom-content">
   <ion-list>
-    <ion-item *ngFor="let product of products" lines="none" class="product-item">
+    <ion-item
+      *ngFor="let product of products"
+      lines="none"
+      class="product-item"
+      (click)="addToCart(product)"
+    >
       <ion-avatar slot="start">
-        <ion-icon name="fish" class="product-icon"></ion-icon> <!-- Vous pouvez changer l'icône si nécessaire -->
+        <ion-icon name="fish" class="product-icon"></ion-icon> <!-- Icône -->
       </ion-avatar>
       <ion-label class="product-label">
         <h3>{{ product.name }}</h3>
