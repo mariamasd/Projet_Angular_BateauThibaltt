@@ -1,0 +1,96 @@
+<ion-header>
+  <app-header></app-header>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="breadcrumb">
+  <ion-icon name="home-outline"></ion-icon>
+  <a (click)="navigateToHome()">Accueil</a>
+  <span class="breadcrumb-separator">/</span>
+  <span>{{ listType }}</span>
+</div>
+
+  <ng-container *ngIf="listType === 'bateaux'">
+    <ion-list>
+      <ion-card *ngFor="let bateau of listBateaux" (click)="navigateToInfo(bateau, 'bateau')" class="bateau-card">
+        <img src="{{ bateau.url }}" alt="{{ bateau.nom }}" class="restaurant-image" />
+  
+        <ion-card-header>
+          <ion-card-title>{{ bateau.nom }}</ion-card-title>
+          <ion-card-subtitle class="custom-font">{{ bateau.Type }} - {{ bateau.taille }}</ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content>
+          <p class="breve-description">
+            {{ bateau.description | slice:0:60 }}...
+          </p>
+        </ion-card-content>
+      </ion-card>
+    </ion-list>
+  </ng-container>
+
+  <ng-container *ngIf="listType === 'restaurants'">
+    <ion-list>
+      <ion-card *ngFor="let restaurant of listRestaurants" (click)="navigateToInfo(restaurant, 'restaurant')" class="restaurant-card">
+        <div class="image-container">
+          <img [src]="restaurant.url" alt="{{ restaurant.name }}" class="restaurant-image"/>
+          <div class="rating-badge" [ngClass]="getRatingClass(restaurant.rating)">
+            <ion-icon name="star" class="star-icon"></ion-icon>
+            {{ restaurant.rating }} / 10
+          </div>
+        </div>
+        <ion-card-header class="card-header">
+          <div class="header-title">
+            <ion-card-title>{{ restaurant.name }}</ion-card-title>
+            <span class="avis-text">{{ restaurant.avis }} avis</span>
+          </div>
+          <ion-card-subtitle>{{ restaurant.city }}</ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content>
+          <p><strong>Signature:</strong> {{ restaurant.signature_dish }}</p>
+          <p><strong>Prix:</strong> à partir de {{ restaurant.global_price }} €</p>
+        </ion-card-content>
+      </ion-card>
+    </ion-list>
+  </ng-container>
+  
+  <ng-container *ngIf="listType === 'recettes'">
+    <ion-list>
+      <ion-card *ngFor="let recette of listRecettes" (click)="navigateToInfo(recette, 'recette')">
+        <div class="image-container">
+          <img [src]="recette.url" alt="{{ recette.nom }}" class="restaurant-image"/>
+          <div class="portion-badge">
+            {{ recette.nombreDePortions }} Personnes
+          </div>
+        </div>
+        <ion-card-header>
+          <div class="header-content">
+            <ion-card-title>{{ recette.nom }}</ion-card-title>
+            <div class="cooking-time">
+              <ion-icon name="time" class="cooking-icon"></ion-icon>
+              {{ recette.tempsDeCuisson }}
+            </div>
+          </div>
+        </ion-card-header>
+        <ion-card-content>
+          <p class="short-description">Ingrédients: {{ recette.ingredients[0] }}{{ recette.ingredients.join(', ').length > 100 ? '...' : '' }}</p>
+          <p class="short-description">Allergènes: {{ recette.allergenes.join(', ').slice(0, 100) }}{{ recette.allergenes.join(', ').length > 100 ? '...' : '' }}</p>
+        </ion-card-content>
+      </ion-card>
+    </ion-list>
+  </ng-container>
+  
+  
+  
+  
+
+  <ng-container *ngIf="!listBateaux && !listRestaurants && !listRecettes">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Aucune donnee à afficher</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        Veuillez selectionner une categorie pour afficher les donnees.
+      </ion-card-content>
+    </ion-card>
+  </ng-container>
+</ion-content>

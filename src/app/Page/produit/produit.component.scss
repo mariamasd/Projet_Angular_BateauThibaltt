@@ -1,0 +1,147 @@
+.product-card {
+  display: flex;
+  flex-direction: row;
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 0;
+  max-height: 120px;
+}
+
+.product-container {
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+}
+
+.product-image-container {
+  width: 170px; 
+  height: 120px; 
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px 20px;
+}
+
+.restaurant-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  display: block;
+}
+
+.product-card-content {
+  padding: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .product-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #333;
+  }
+
+  .product-info {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    color: #666;
+    padding-top: 5px;
+
+    .info-icon {
+      font-size: 1.2rem;
+      color: #3b82f6;
+      margin-right: 5px;
+    }
+  }
+}
+
+.quantity-controls {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: rgba(255, 255, 255, 0.6); 
+  border-radius: 20px;
+  padding: 5px 10px;
+}
+
+.decrement-btn,
+.increment-btn {
+  width: 20px;
+  height: 20px;
+  border: none;
+  border-radius: 50%;
+  background-color: #2600ff;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.1s ease-in-out;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  &:active {
+    transform: scale(0.9);
+  }
+  .quantity {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+}
+}
+
+/* Style commun pour tous les boutons */
+ion-button {
+  margin: 5px;
+  border-radius: 12px;
+  padding: 5px 20px;
+  background-color: transparent; /* Utilisez transparent si vous voulez que l'image soit visible */
+  background-image: url('../../../assets/fond_boutton.png'); 
+  color: #333; 
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  font-weight: 600;
+  text-transform: uppercase;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+/* Effet de survol */
+ion-button:hover {
+  transform: translateY(-2px); 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Style du bouton actif */
+ion-button.active {
+  background-color: #4a90e2; 
+  color: white; 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
+}
+
+/* Animation lors du clic */
+ion-button:active {
+  transform: scale(0.98); 
+}
+
+/* Responsive: assure que les boutons s'adaptent aux petits écrans */
+@media (max-width: 768px) {
+  ion-button {
+    padding: 8px 16px;
+    font-size: 0.7rem;
+  }
+}
+
+
+
+
+
+
+

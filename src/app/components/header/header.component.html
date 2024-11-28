@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <!-- Titre avec icône -->
+    <ion-title>
+      <ion-icon src="../../../assets/icon_appli.png" slot="start"></ion-icon>
+      Thibault's Market
+    </ion-title>
+
+    <!-- Boutons à droite -->
+    <ion-buttons slot="end">
+      <!-- Bouton Paramètres -->
+      <ion-button (click)="goToContact()" fill="clear">
+        <ion-icon name="information-circle-outline" slot="start"></ion-icon>
+      </ion-button>
+
+      <!-- Bouton Panier avec badge -->
+      <ion-button [routerLink]="['/cart']" fill="clear" class="cart-button">
+        <ion-icon slot="icon-only" name="basket-sharp"></ion-icon>
+        <ion-badge slot="end" color="danger" *ngIf="totalItems > 0">
+          {{ totalItems }}
+        </ion-badge>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>

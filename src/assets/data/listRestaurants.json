@@ -1,0 +1,58 @@
+[
+    {
+        "id": 1,
+        "name": "L'Écaille d'Argent",
+        "description": "Un mélange subtil de tradition et d'innovation dans une ambiance élégante en bord de mer.",
+        "history": "Créé en 1987 à La Rochelle, ce restaurant met à l'honneur les fruits de mer avec des recettes revisitées par des chefs passionnés.",
+        "chef": "Chef Sophie Bernard",
+        "type": "Restaurant semi-gastronomique",
+        "city": "La Rochelle, 5 Quai Valin, 17000",
+        "signature_dish": "Plateau royal de fruits de mer",
+        "rating": 9.2,
+        "global_price": 50.0,
+        "url": "assets/photo/restaurants/photo1.jpg",
+        "avis" : 200
+    },
+    {
+        "id": 2,
+        "name": "Au Filet Bleu",
+        "description": "Un lieu convivial où les poissons frais sont sublimés dans des plats simples mais savoureux.",
+        "history": "Depuis 1978, Au Filet Bleu accueille ses clients dans une atmosphère chaleureuse à Lorient, avec une carte qui change au gré des marées.",
+        "chef": "Chef Marc Le Goff",
+        "type": "Brasserie marine",
+        "city": "Lorient, 23 Quai des Indes, 56100",
+        "signature_dish": "Filet de bar à la crème citronnée",
+        "rating": 8.8,
+        "global_price": 30.0,
+        "url": "assets/photo/restaurants/photo2.jpg",
+        "avis" : 180
+    },
+    {
+        "id": 3,
+        "name": "Les Marées Gourmandes",
+        "description": "Un voyage culinaire autour des saveurs de la mer, dans une décoration chic et moderne.",
+        "history": "Depuis 2005, ce restaurant nantais est une référence pour les amateurs de cuisine raffinée avec des produits locaux.",
+        "chef": "Chef Antoine Perrot",
+        "type": "Restaurant gastronomique",
+        "city": "Nantes, 10 Rue de la Fosse, 44000",
+        "signature_dish": "Homard rôti au beurre d'herbes",
+        "rating": 9.3,
+        "global_price": 65.0,
+        "url": "assets/photo/restaurants/photo3.jpg",
+        "avis" : 120
+    },
+    {
+        "id": 4,
+        "name": "Le Capitaine Savoureux",
+        "description": "Un établissement familial proposant des plats généreux et faits maison à base de produits locaux.",
+        "history": "Ouvert en 1992 à Saint-Malo, Le Capitaine Savoureux est connu pour son accueil chaleureux et ses portions généreuses.",
+        "chef": "Chef Clara Fontaine",
+        "type": "Restaurant traditionnel",
+        "city": "Saint-Malo, 8 Rue Jacques Cartier, 35400",
+        "signature_dish": "Moules marinières et frites maison",
+        "rating": 9.0,
+        "global_price": 25.0,
+        "url": "assets/photo/restaurants/photo4.jpg",
+        "avis" : 300
+    }
+]

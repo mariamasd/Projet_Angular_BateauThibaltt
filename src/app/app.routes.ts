@@ -1,41 +1,46 @@
 import { Routes } from '@angular/router';
+import { CartComponent } from './Page/cart/cart.component';
+import { TabsComponent } from './tabs/tabs.component';
 
 export const routes: Routes = [
   {
-    path: 'home',
-    loadComponent: () => import('./home/home.page').then((m) => m.HomePage),
-  },
-  {
     path: '',
-    redirectTo: 'home',
-    pathMatch: 'full',
+    component: TabsComponent, 
+    children: [
+      {
+      path: 'home',
+      loadComponent: () => import('./Page/home/home.page').then((m) => m.HomePage),
+    },
+    {
+      path: '',
+      redirectTo: 'home',
+      pathMatch: 'full',
+    },
+    {
+      path: 'contact',
+      loadComponent: () => import('./Page/contact/contact.page').then( m => m.ContactPage)
+    },
+    {
+      path: 'list-all',
+      loadComponent: () => import('./Page/list-all/list-all.page').then( m => m.ListAllPage)
+    },
+    {
+      path: 'list-bateaux',
+      loadComponent: () => import('./Page/list-all/list-all.page').then( m => m.ListAllPage)
+    },
+    {
+      path: 'produit',
+      loadComponent: () => import('./Page/produit/produit.component').then(m => m.ProduitComponent)
+    },
+    {
+      path: 'info-item',
+      loadComponent: () => import('./Page/contact/contact.page').then( m => m.ContactPage)
+    },
+    { path: 'cart',
+        component: CartComponent
+    },
+      
+    ]
   },
-  {
-    path: 'gerant',
-    loadComponent: () => import('./gerant/gerant.page').then((m) => m.GerantPage),
-  },
-  {
-    path: 'bateaux',
-    loadComponent: () => import('./bateaux/bateaux.page').then((m) => m.BateauxPage),
-  },
-  {
-    path: 'deLaBrise',
-    loadComponent: () => import('./de-la-brise/de-la-brise.page').then((m) => m.DeLaBrisePage),
-  },
-  {
-    path: 'saphir',
-    loadComponent: () => import('./saphir/saphir.page').then((m) => m.SaphirPage),
-  },
-  {
-    path: 'gastMicher',
-    loadComponent: () => import('./gast-micher/gast-micher.page').then((m) => m.GastMicherPage),
-  },
-  {
-    path: 'aquilon',
-    loadComponent: () => import('./aquilon/aquilon.page').then((m) => m.AquilonPage),
-  },
-  {
-    path: 'restaurants',
-    loadComponent: () => import('./restaurants/restaurants.page').then((m) => m.RestaurantsPage),
-  },
+
 ];

@@ -1,0 +1,256 @@
+.info-section {
+  margin: 20px 0;
+  padding: 15px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #ffffff, #f9f9f9);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.info-section:hover {
+  transform: translateY(-5px);
+}
+
+.info-image-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.info-image {
+  width: 100%;
+  height: auto;
+  border-radius: 12px 12px 0 0;
+  transition: transform 0.5s;
+}
+
+.info-image:hover {
+  transform: scale(1.05);
+}
+
+.info-title {
+  font-size: 1.8em;
+  margin: 10px 0;
+  color: #333;
+}
+
+.info-subtitle {
+  font-size: 1.2em;
+  margin: 5px 0;
+  color: #777;
+}
+
+.info-details p {
+  font-size: 1em;
+  color: #555;
+  margin: 5px 0;
+  line-height: 1.5;
+}
+ol {
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #333;
+}
+
+li {
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+
+li::marker {
+  font-weight: bold;
+  color: #007BFF;
+}
+
+.info-details p {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+.info-details ol {
+  list-style-type: decimal;
+  padding-left: 20px;
+}
+
+.info-details ol li {
+  margin-bottom: 0.5rem;
+}
+.info-details p {
+  margin: 0.5rem 0;  /* Marge autour des paragraphes d'ingrédients */
+  font-size: 1.1rem;  /* Taille de police pour le texte */
+}
+
+/* Styles pour les instructions */
+.info-details ol {
+  list-style-type: decimal;  
+  padding-left: 20px;  
+}
+
+.info-details ol li {
+  margin-bottom: 0.5rem;  
+}
+
+
+
+.quantity-controls {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: rgba(255, 255, 255, 0.6); /* Fond semi-transparent */
+  border-radius: 20px;
+  padding: 5px 10px;
+}
+
+.decrement-btn,
+.increment-btn {
+  width: 20px;
+  height: 20px;
+  border: none;
+  border-radius: 50%;
+  background-color: #2600ff;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.1s ease-in-out;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  &:active {
+    transform: scale(0.9);
+  }
+  .quantity {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+}
+}
+
+.info-recette-details {
+  margin: 20px 0;
+}
+
+.recette-summary {
+  display: flex;
+  justify-content: space-around;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.recette-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.recette-icon {
+  font-size: 24px;
+  margin-right: 5px;
+  color: #ff4081;
+}
+
+.recette-item span {
+  font-size: 1rem;
+  color: #333;
+}
+
+.info-image {
+  border-radius: 12px;
+  width: 100%;
+  height: auto;
+}
+
+.info-title {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.info-details {
+  margin-top: 20px;
+}
+
+ul, ol {
+  padding-left: 20px;
+}
+
+ul li, ol li {
+  margin-bottom: 5px;
+}
+
+.kcal-icon {
+  font-size: 24px;
+  margin-right: 5px;
+  color: #ff4500; 
+}
+
+.recette-item span {
+  font-size: 1rem;
+  color: #333; 
+}
+
+
+
+
+
+//=====================
+.info-section {
+  border: 1px solid #e0e0e0; /* Bordure légère autour de la section */
+  border-radius: 8px; /* Coins arrondis */
+  padding: 20px; /* Espacement intérieur */
+  background-color: #f9f9f9; /* Couleur de fond douce */
+  max-width: 600px; /* Largeur maximale de la section */
+  margin: 20px auto; /* Centrer la section sur la page */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Ombre douce */
+}
+
+.info-image-container {
+  text-align: center; /* Centrer l'image */
+}
+
+.info-image {
+  max-width: 100%; /* Image responsive */
+  height: auto; /* Conserver le rapport hauteur/largeur */
+  border-radius: 8px; /* Coins arrondis pour l'image */
+}
+
+.info-title {
+  font-size: 24px; /* Taille de police pour le titre */
+  color: #333; /* Couleur du texte */
+  margin: 10px 0; /* Marges autour du titre */
+}
+
+.info-subtitle {
+  font-size: 18px; /* Taille de police pour le sous-titre */
+  color: #777; /* Couleur plus claire pour le sous-titre */
+  margin-bottom: 15px; /* Espacement en bas du sous-titre */
+}
+
+.info-details p {
+  font-size: 16px; /* Taille de police pour les détails */
+  color: #555; /* Couleur des détails */
+  line-height: 1.6; /* Hauteur de ligne pour une meilleure lisibilité */
+  margin: 5px 0; /* Marges verticales pour chaque paragraphe */
+}
+
+strong {
+  color: #000; /* Couleur pour les étiquettes en gras */
+}
+

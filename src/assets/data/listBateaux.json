@@ -1,0 +1,62 @@
+[
+    {
+        "nom": "Corto Maltese CN.290103",
+        "taille": "11 mètres",
+        "Type": "Chalutier",
+        "nbEmployer": 5,
+        "typedePache": "Pêche durable",
+        "specialite": "Poissons",
+        "lieuDePache": "Manche",
+        "anciente": 80,
+        "url": "assets/photo/bateaux/Corto_Maltese.png",
+        "nom_capitaine": "Thibault",
+        "poids": "80 tonnes",
+        "capacite_peche": "500 kg",
+        "description": "Construit en 1962, Le Corto Maltese a navigué à travers la Manche. Thibault, son capitaine, est connu pour son approche respectueuse de la mer, s'assurant que la pêche se fait sans nuire à l'écosystème."
+    },
+    {
+        "nom": "L'Océan DP.775533",
+        "taille": "15 mètres",
+        "Type": "Chalutier",
+        "nbEmployer": 7,
+        "typedePache": "Pêche artisanale",
+        "specialite": "Coquillages et crustacés",
+        "lieuDePache": "Atlantique",
+        "anciente": 60,
+        "url": "assets/photo/bateaux/LOcean.jpg",
+        "nom_capitaine": "Gabriel",
+        "poids": "120 tonnes",
+        "capacite_peche": "800 kg",
+        "description": "Lancé en 1964, L'Océan est spécialisé dans la pêche de coquillages et crustacés dans l'Atlantique. Gabriel veille à maintenir des standards élevés de durabilité."
+    },
+    {
+        "nom": "Murantjo LR.266701",
+        "taille": "9 mètres",
+        "Type": "Barque motorisée",
+        "nbEmployer": 3,
+        "typedePache": "Pêche côtière",
+        "specialite": "Poissons de roche",
+        "lieuDePache": "Méditerranée",
+        "anciente": 50,
+        "url": "assets/photo/bateaux/Murantjo.jpg",
+        "nom_capitaine": "Sébastien",
+        "poids": "50 tonnes",
+        "capacite_peche": "300 kg",
+        "description": "Le Murantjo opère sur les eaux méditerranéennes. Sébastien et son équipage privilégient les méthodes traditionnelles pour préserver la biodiversité locale."
+    },
+    {
+        "nom": "Fils du Vent SB.626639",
+        "taille": "25 mètres",
+        "Type": "Trawler",
+        "nbEmployer": 10,
+        "typedePache": "Pêche bio certifiee",
+        "specialite": "Poissons",
+        "lieuDePache": "Manche",
+        "anciente": 7,
+        "url": "assets/photo/bateaux/Fils_du_Vent.jpg",
+        "nom_capitaine": "Pierre Roux",
+        "poids": "95 tonnes",
+        "capacite_peche": "4000 kg",
+        "description": "Naviguant en Manche, Le Fils du Vent, dirigé par Pierre Roux, est un trawler bio certifié qui s'engage pour une pêche durable. Son équipage est fier de maintenir des pratiques respectueuses de l'environnement."
+    }
+]

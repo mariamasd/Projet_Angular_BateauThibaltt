@@ -1,0 +1,126 @@
+[
+    {
+        "nom": "Moules à la Provençale",
+        "ingredients": [
+            "1kg de moules de pêche (Madagascar)",
+            "2 tomates",
+            "1 oignon",
+            "2 gousses d'ail",
+            "1 bouquet de persil",
+            "1 verre de vin blanc",
+            "Huile d'olive",
+            "Sel",
+            "Poivre"
+        ],
+        "instructions": [
+            "Nettoyer les moules en les frottant sous l'eau froide.",
+            "Dans une grande poêle, faire revenir l'oignon haché dans de l'huile d'olive.",
+            "Ajouter l'ail et les tomates coupées en dés, laisser mijoter quelques minutes.",
+            "Verser le vin blanc et laisser réduire.",
+            "Ajouter les moules, couvrir et cuire pendant 5-7 minutes jusqu'à ce qu'elles s'ouvrent.",
+            "Assaisonner avec sel, poivre et parsemer de persil frais avant de servir."
+        ],
+        "tempsDePreparation": "15 minutes",
+        "tempsDeCuisson": "10 minutes",
+        "nombreDePortions": 4,
+        "allergenes": [
+            "Mollusques",
+            "Sulfites"
+        ],
+        "calories": 250,
+        "niveauDeDifficulte": "Facile",
+        "url": "assets/photo/recettes/Moules_la_Provencale.jpg"
+    },
+    {
+        "nom": "Tartare de saumon",
+        "ingredients": [
+            "300g de Filet Bar de ligne",
+            "1 avocat",
+            "1 echalote",
+            "1 citron",
+            "coriandre fraîche",
+            "huile d'olive",
+            "sel",
+            "poivre"
+        ],
+        "instructions": [
+            "Couper le saumon en petits des et le mettre dans un bol.",
+            "Ajouter l'avocat coupe en des et l'echalote finement hachee.",
+            "Presser le citron et ajouter le jus au melange.",
+            "Ajouter la coriandre ciselee, l'huile d'olive, le sel et le poivre.",
+            "Melanger delicatement et servir frais."
+        ],
+        "tempsDePreparation": "15 minutes",
+        "tempsDeCuisson": "0 minutes",
+        "nombreDePortions": 2,
+        "allergenes": [
+            "Poissons"
+        ],
+        "calories": 300,
+        "niveauDeDifficulte": "Facile",
+        "url": "assets/photo/recettes/Tartare_de_saumon.jpg"
+    },
+    {
+        "nom": "Paella de fruits de mer",
+        "ingredients": [
+            "400g de riz à paella",
+            "300g de moules",
+            "300g de crevettes",
+            "200g de calamars",
+            "1 oignon",
+            "2 gousses d'ail",
+            "1 poivron rouge",
+            "1 litre de bouillon de poisson",
+            "1 sachet de safran",
+            "huile d'olive",
+            "sel",
+            "poivre"
+        ],
+        "instructions": [
+            "Dans une grande poêle, faire revenir l'oignon, l'ail, et le poivron dans de l'huile d'olive.",
+            "Ajouter le riz et melanger pour bien enrober les grains.",
+            "Verser le bouillon de poisson chaud et ajouter le safran.",
+            "Laisser mijoter pendant 10 minutes.",
+            "Ajouter les moules, les crevettes et les calamars, puis cuire jusqu'à ce que le riz soit tendre et les fruits de mer cuits.",
+            "Assaisonner avec du sel et du poivre avant de servir."
+        ],
+        "tempsDePreparation": "20 minutes",
+        "tempsDeCuisson": "30 minutes",
+        "nombreDePortions": 6,
+        "allergenes": [
+            "Poissons",
+            "Crustaces"
+        ],
+        "calories": 500,
+        "niveauDeDifficulte": "Moyen",
+        "url": "assets/photo/recettes/Paella_de_fruits_de_mer.webp"
+    },
+    {
+        "nom": "Sushi au thon",
+        "ingredients": [
+            "200g de thon frais",
+            "200g de riz à sushi",
+            "3 feuilles de nori",
+            "1 avocat",
+            "vinaigre de riz",
+            "sucre",
+            "sel"
+        ],
+        "instructions": [
+            "Cuire le riz à sushi selon les instructions sur l'emballage.",
+            "Melanger le vinaigre de riz, le sucre et le sel, puis l'incorporer au riz.",
+            "Couper le thon et l'avocat en fines lanieres.",
+            "Placer une feuille de nori sur une natte de sushi, etaler le riz uniformement, puis ajouter le thon et l'avocat.",
+            "Rouler delicatement le sushi et couper en tranches."
+        ],
+        "tempsDePreparation": "30 minutes",
+        "tempsDeCuisson": "20 minutes",
+        "nombreDePortions": 2,
+        "allergenes": [
+            "Poissons"
+        ],
+        "calories": 350,
+        "niveauDeDifficulte": "Moyen",
+        "url": "assets/photo/recettes/Sushi_au_thon.jpg"
+    }
+]

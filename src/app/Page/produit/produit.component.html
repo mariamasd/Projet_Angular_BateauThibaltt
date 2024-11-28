@@ -1,0 +1,95 @@
+<ion-header>
+  <app-header></app-header>
+  <ion-toolbar style="display: fixed; top:0;">
+      <ion-searchbar [(ngModel)]="searchTerm" (ionInput)="filterItems()" placeholder="Rechercher un bateau..."></ion-searchbar>
+    </ion-toolbar>
+    <ion-buttons>
+  <ion-button style="color:aliceblue;"
+    [ngClass]="{'active': category === 'all'}" 
+    (click)="filterByCategory('all')">
+    All
+  </ion-button>
+  
+  <ion-button style="color:aliceblue;"
+    [ngClass]="{'active': category === 0}" 
+    (click)="filterByCategory(0)">
+    Poisson
+  </ion-button>
+  
+  <ion-button style="color:aliceblue;"
+    [ngClass]="{'active': category === 1}" 
+    (click)="filterByCategory(2)">
+    Crustacé
+  </ion-button>
+  
+  <ion-button style="color:aliceblue;"
+    [ngClass]="{'active': category === 2}" 
+    (click)="filterByCategory(1)">
+    Coquillage
+  </ion-button>
+</ion-buttons>
+
+</ion-header>
+<ion-content class="ion-padding">
+  <ng-container *ngIf="produits && produits.length > 0">
+    
+
+<ion-list>
+  <ion-card *ngFor="let produit of filtreProduits" class="product-card">
+    <div class="product-container" (click)="navigateToInfo(produit, 'produit')" style="cursor: pointer;" >
+      <ion-label class="product-image-container" >
+        <img src="{{ produit.url }}" class="restaurant-image">
+      </ion-label>
+
+      <!-- Détails du produit et contrôle de quantité -->
+      <ion-card-content class="product-card-content">
+        <ion-card-title class="product-title">{{ produit.name }}</ion-card-title>
+        
+        <div class="product-info">
+            <p>
+              <ion-icon name="pricetag" class="info-icon"></ion-icon>
+              Prix: <strong>{{ produit.price }} € / {{ produit.unit }}</strong>
+          </p>
+        </div>
+
+        <!--
+        <div class="product-info">
+          <ion-icon [name]="produit.availability ? 'checkmark-circle' : 'close-circle'" class="info-icon"></ion-icon>
+          <p>{{ produit.availability ? 'Disponible' : 'Indisponible' }}</p>
+        </div>
+      -->
+        <!--
+        <div class="product-info">
+          <ion-icon [name]="produit.sale ? 'flash' : 'flash-off'" class="info-icon"></ion-icon>
+          <p>En soldes : <strong>{{ produit.sale ? 'Oui' : 'Non' }}</strong></p>
+        </div>
+      
+        <div class="product-info">
+          <ion-icon name="earth" class="info-icon"></ion-icon>
+          <p>Origine: <strong>{{ produit.provenance }}</strong></p>
+        </div>
+      -->
+        <!-- Boutons d'incrémentation et de décrémentation--> 
+      </ion-card-content>
+      </div>
+      <div class="quantity-controls">
+          <button class="decrement-btn" (click)="removeFromCart(produit.id)">-</button>
+          <span class="quantity">{{ getProductQuantity(produit.id) }}</span>
+          <button class="increment-btn" (click)="addToCart(produit)">+</button>
+        </div>
+    
+  </ion-card>
+</ion-list>
+  </ng-container>
+
+  <ng-container *ngIf="!produits || produits.length === 0">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Aucune donnée à afficher</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        Veuillez ajouter des produits pour les afficher ici.
+      </ion-card-content>
+    </ion-card>
+  </ng-container>
+</ion-content>

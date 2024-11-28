@@ -1,0 +1,52 @@
+
+<app-header></app-header>
+  
+<ion-toolbar class="toolbar-section">
+  <ion-searchbar [(ngModel)]="searchTerm" (ionInput)="filterItems()" placeholder="Rechercher un produit"></ion-searchbar>
+  
+  <ion-buttons>
+    <ion-button class="custom-button" (click)="navigateToInfo1('all')" style="color:aliceblue">All</ion-button>
+    <ion-button class="custom-button" (click)="navigateToInfo1(0)"><ion-icon style="color: white;" name="fish"></ion-icon></ion-button>
+    <ion-button class="custom-button" (click)="navigateToInfo1(2)"><ion-icon style="color: white;" src="../../../assets/icon/Shrimp.svg" name="fish"></ion-icon></ion-button>
+    <ion-button class="custom-button" (click)="navigateToInfo1(1)"><ion-icon style="color: white;" src="../../../assets/icon/Shell.svg" name="fish"></ion-icon></ion-button>
+  </ion-buttons>
+</ion-toolbar>
+
+
+
+<ion-content [fullscreen]="true">
+  <ion-list *ngIf="searchTerm && filteredProduits.length > 0">
+    <ion-item *ngFor="let produit of filteredProduits" (click)="navigateToInfo(produit, 'produit')">
+      {{ produit.name }} 
+    </ion-item>
+  </ion-list>
+  <ion-content>
+  <h2 class="section-title">Offres</h2>
+  <swiper-container [pagination]="false" [navigation]="false" [slidesPerView]="swiperConfig.slidesPerView" [spaceBetween]="swiperConfig.spaceBetween">
+    <swiper-slide *ngFor="let produit of produitsEnPromotion" (click)="navigateToInfo(produit, 'produit')">
+      <ion-card class="product-card">
+        <img [src]="produit.url" alt="{{ produit.name }}" class="card-image" />
+        <ion-card-header>
+          <ion-card-title>{{ produit.name }}</ion-card-title>
+          <ion-card-subtitle>{{ produit.price | currency }}</ion-card-subtitle>
+        </ion-card-header>
+      </ion-card>
+    </swiper-slide>
+  </swiper-container>
+  
+  <hr/>
+
+  <h2 class="section-title">Recettes</h2>
+  <swiper-container [pagination]="false" [navigation]="false" [slidesPerView]="swiperConfig.slidesPerView" [spaceBetween]="swiperConfig.spaceBetween">
+    <swiper-slide *ngFor="let recette of listRecettes" (click)="navigateToInfo(recette, 'recette')">
+      <ion-card class="recipe-card">
+        <img [src]="recette.url" class="card-image" />
+        <ion-card-header>
+          <ion-card-title>{{ recette.nom }}</ion-card-title>
+        </ion-card-header>
+      </ion-card>
+    </swiper-slide>
+  </swiper-container>
+</ion-content>
+</ion-content>
+
