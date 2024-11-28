@@ -1,0 +1,60 @@
+/* Style général */
+ion-content {
+    --background: linear-gradient(to bottom, #48c6ef, #6dd5ed);
+  }
+  
+  /* Titre principal */
+  .header-title {
+    text-align: center;
+    color: #ffffff;
+    margin-top: 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  
+  /* Style des cartes de catégorie */
+  .category-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 90%;
+    margin: 10px auto;
+    padding: 15px;
+    border-radius: 12px;
+    background: linear-gradient(to right, #ffffff, #e3f2fd);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    cursor: pointer;
+  }
+  
+  /* Effet au survol (hover) */
+  .category-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Conteneur pour les icônes */
+  .icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #2e86de;
+    margin-right: 15px;
+  }
+  
+  .icon-container ion-icon {
+    font-size: 30px;
+    color: #ffffff;
+  }
+  
+  /* Libellé des catégories */
+  .category-label {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #2e86de;
+  }
+  

@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Recettes de nos restaurants partenaires</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding" style="text-align: center; background: linear-gradient(to bottom, #FF7F50, #FFFACD);">
+  <h1>Recettes de nos restaurants partenaires</h1>
+  <p style="font-style: italic;">Découvrez les saveurs de nos chefs.</p>
+  <p>📞 06 63 99 99 78</p>
+  <p>📧 <a href="mailto:lebatoudeThibault&#64;gmail.com">lebatoudeThibault&#64;gmail.com</a></p>
+  <p>🔗 <a href="https://www.facebook.com/lebatoudeThibault" target="_blank">facebook.com/lebatoudeThibault</a></p>
+
+  <!-- Grille des recettes -->
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6">
+        <ion-button expand="block" fill="clear" (click)="navigateTo('bouillabaisse')">
+          <img src="assets/images/recettes/bouil.png" alt="Bouillabaisse" style="width: 60px; height: 60px; border-radius: 50%;" />
+          <br />Bouillabaisse
+        </ion-button>
+      </ion-col>
+      <ion-col size="6">
+        <ion-button expand="block" fill="clear" (click)="navigateTo('ratatouille')">
+          <img src="assets/images/recettes/ratatouille.png" alt="Ratatouille" style="width: 60px; height: 60px; border-radius: 50%;" />
+          <br />Ratatouille
+        </ion-button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="6">
+        <ion-button expand="block" fill="clear" (click)="navigateTo('tarteTatin')">
+          <img src="assets/images/recettes/tarteTatin.png" alt="Tarte Tatin" style="width: 60px; height: 60px; border-radius: 50%;" />
+          <br />Tarte Tatin
+        </ion-button>
+      </ion-col>
+      <ion-col size="6">
+        <ion-button expand="block" fill="clear" (click)="navigateTo('moulesFrites')">
+          <img src="assets/images/recettes/moulesFrite.png" alt="Moules-frites" style="width: 60px; height: 60px; border-radius: 50%;" />
+          <br />Moules-frites
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <footer style="margin-top: 30px; font-size: 12px;">
+    <p>Powered by BDK Inc.</p>
+  </footer>
+</ion-content>

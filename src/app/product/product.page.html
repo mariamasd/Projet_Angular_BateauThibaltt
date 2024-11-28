@@ -1,0 +1,27 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-icon name="home" size="large" class="header-icon"></ion-icon>
+    </ion-buttons>
+    <ion-title>{{ getCategoryName() }}</ion-title> <!-- Nom de la catégorie dynamiquement -->
+    <ion-buttons slot="end">
+      <ion-icon name="cart" size="large" class="header-icon"></ion-icon>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="custom-content">
+  <ion-list>
+    <ion-item *ngFor="let product of products" lines="none" class="product-item">
+      <ion-avatar slot="start">
+        <ion-icon name="fish" class="product-icon"></ion-icon> <!-- Vous pouvez changer l'icône si nécessaire -->
+      </ion-avatar>
+      <ion-label class="product-label">
+        <h3>{{ product.name }}</h3>
+      </ion-label>
+      <ion-label class="product-price" slot="end">
+        <h3>{{ product.price }} €</h3>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

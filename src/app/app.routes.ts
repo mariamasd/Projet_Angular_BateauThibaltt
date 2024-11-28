@@ -38,4 +38,36 @@ export const routes: Routes = [
     path: 'restaurants',
     loadComponent: () => import('./restaurants/restaurants.page').then((m) => m.RestaurantsPage),
   },
-];
+  {
+    path: 'recettes',
+    loadComponent: () => import('./recettes/recettes.page').then(m => m.RecettesPage),
+  },
+  {
+    path: 'bouillabaisse',
+    loadComponent: () => import('./bouillabaisse/bouillabaisse.page').then(m => m.BouillabaissePage),
+  },
+  {
+    path: 'ratatouille',
+    loadComponent: () => import('./ratatouille/ratatouille.page').then(m => m.RatatouillePage),
+  },
+  {
+    path: 'tarteTatin',
+    loadComponent: () => import('./tarte-tatin/tarte-tatin.page').then(m => m.TarteTatinPage),
+  },
+  {
+    path: 'moulesFrites',
+    loadComponent: () => import('./moules-frites/moules-frites.page').then(m => m.MoulesFritesPage),
+  },
+  {
+    path: 'product/:category',
+    loadComponent: () => import('./product/product.page').then(m => m.ProductPage)
+  },
+
+  {
+    path: 'categories',
+    loadComponent: () => import('./categories/categories.page').then( m => m.CategoriesPage)
+  },
+  { path: 'product/:id', loadComponent: () => import('./product/product.page').then(m => m.ProductPage) 
+
+  },
+]

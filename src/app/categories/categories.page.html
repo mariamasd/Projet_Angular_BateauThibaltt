@@ -1,0 +1,38 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <!-- Icône Home -->
+    <ion-buttons slot="start">
+      <ion-icon name="home" size="large" class="toolbar-icon"></ion-icon>
+    </ion-buttons>
+
+    <ion-title>Le Bateau de Thibault</ion-title>
+
+    <!-- Icône Panier -->
+    <ion-buttons slot="end">
+      <ion-icon name="cart" size="large" class="toolbar-icon"></ion-icon>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- Titre principal -->
+  <div class="header-title">
+    <h1>Choisissez vos produits</h1>
+  </div>
+
+  <!-- Liste des catégories avec ion-row et ion-col -->
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12" *ngFor="let category of categories" (click)="navigateToCategory(category)">
+        <div class="category-card">
+          <div class="icon-container">
+            <ion-icon name="logo-octocat"></ion-icon>
+          </div>
+          <div class="category-label">
+            {{ getCategoryName(category) }}
+          </div>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
