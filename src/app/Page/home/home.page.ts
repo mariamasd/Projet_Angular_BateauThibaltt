@@ -1,17 +1,14 @@
 import { Component, CUSTOM_ELEMENTS_SCHEMA, OnInit } from '@angular/core';
 
 import { HeaderComponent } from 'src/app/components/header/header.component';
-import { NavigationExtras, Router ,ActivatedRoute} from '@angular/router';
-import { IonIcon, IonList, IonToggle, IonItem, IonLabel, IonSelect, IonSelectOption, IonHeader, IonToolbar, IonTitle, IonContent, IonButton, IonFooter, IonButtons, IonBadge, IonSearchbar } from '@ionic/angular/standalone';
-import { RouterLink } from '@angular/router';
-import { TabsComponent } from 'src/app/tabs/tabs.component';
+import { NavigationExtras, Router} from '@angular/router';
+import { IonIcon, IonList, IonItem, IonToolbar, IonContent, IonButton, IonButtons, IonSearchbar } from '@ionic/angular/standalone';
 import { CommonModule } from '@angular/common'; 
 import { CartService } from '../../services/cart.service';
 import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms'; 
 import { ListsService } from 'src/app/services/lists.service';
 import { register } from 'swiper/element/bundle';
-import Swiper from 'swiper';
 import { HttpClient } from '@angular/common/http';
 
 register()
@@ -23,28 +20,16 @@ register()
 
   imports: [
     HeaderComponent,
-    IonBadge,
     IonButtons,
     RouterModule,
     CommonModule,
-    IonFooter,
-    TabsComponent,
-    RouterLink,
-    IonHeader,
     IonToolbar,
-    IonTitle,
     IonContent,
     IonButton,
     IonIcon,
     IonList,
-    IonToggle,
     IonItem,
-    IonLabel,
-    IonSelect,
-    IonSelectOption,
-    IonHeader,
     IonToolbar,
-    IonTitle,
     IonContent,
     IonSearchbar, FormsModule,
   ],
@@ -76,7 +61,6 @@ export class HomePage implements OnInit {
 
     // Charger les produits lors de l'initialisation
     this.loadProduits();
-    this.getListRecettes();
   }
 
   // Naviguer vers la page 'list-all'
@@ -104,18 +88,6 @@ export class HomePage implements OnInit {
       },
       (error) => {
         console.error('Erreur lors du chargement des produits', error);
-      }
-    );
-  }
-  getListRecettes() {
-    this.listsService.getListRecettes().subscribe(
-      (response) => {
-        this.listRecettes = response.recettes
-        this.filterRecettesByPromotion();
-        console.log(this.listRecettes); 
-      },
-      (error) => {
-        console.error('Erreur lors de la récupération des données :', error);
       }
     );
   }

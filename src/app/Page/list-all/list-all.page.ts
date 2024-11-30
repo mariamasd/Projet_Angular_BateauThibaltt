@@ -5,7 +5,7 @@ import { NavigationExtras, Router ,ActivatedRoute} from '@angular/router';
 import { ListsService } from 'src/app/services/lists.service';
 import { HttpClientModule } from '@angular/common/http'; 
 import { IonContent, IonHeader, IonTitle, IonToolbar, IonList, IonItem, IonLabel, IonCard, IonCardHeader, IonCardContent, IonIcon, IonCardTitle,IonCardSubtitle, IonButtons, IonButton } from '@ionic/angular/standalone';
-import { Bateau, Restaurant, Recette, Type } from 'src/app/models/bateau.model';
+import { Bateau, Restaurant, Recette, Type } from 'src/app/models/base.model';
 import { RouterModule } from '@angular/router';
 import { HeaderComponent } from "../../components/header/header.component";
 

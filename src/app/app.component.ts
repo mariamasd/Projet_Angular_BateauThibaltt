@@ -3,7 +3,7 @@ import { RouterOutlet } from '@angular/router'; // RouterOutlet peut rester ici
 import { IonButton,IonApp, IonRouterOutlet, IonTitle, IonLabel, IonContent, IonHeader, IonToolbar, IonList, IonItem, IonCard, IonCardHeader, IonIcon, IonCardContent } from '@ionic/angular/standalone';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
-import { HomePage } from './home/home.page'; 
+import { HomePage } from './Page/home/home.page';
 import { HeaderComponent } from './components/header/header.component';
 
 @Component({
